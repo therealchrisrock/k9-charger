@@ -2,7 +2,7 @@ import { useFormSidebarExtension, Wrapper } from "@graphcms/app-sdk-react";
 import { Button, Flex } from "@hygraph/baukasten";
 
 function SidebarElement() {
-    const { installation } = useFormSidebarExtension();
+    const { installation, model } = useFormSidebarExtension();
     return (
         <Flex>
             <Button flex="1" onClick={() => alert("Hello!")}>
